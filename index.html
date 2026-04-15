@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UnikWare – Building Scalable Software for the Digital Future</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo"><img src="logo.png" alt="UnikWare" class="logo-img" /></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#about">About Us</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary nav-cta">Get in Touch <i class="fa-solid fa-arrow-right arrow"></i></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text" data-animate>
+        <div class="badge">SOFTWARE. SOLUTIONS. GROWTH.</div>
+        <h1>Building Scalable Software for the <span class="highlight">Digital Future</span></h1>
+        <p>We design and develop powerful software, web applications, mobile apps, and ERP solutions for modern businesses.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right arrow"></i></a>
+          <a href="#solutions" class="btn btn-outline">View Solutions <i class="fa-solid fa-arrow-right arrow"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate data-delay="200">
+        <div class="dashboard-card main-card">
+          <div class="card-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="card-title">Analytics Overview</span>
+          </div>
+          <div class="chart-area">
+            <svg viewBox="0 0 260 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="0,70 40,55 80,60 120,30 160,40 200,15 260,20" stroke="#1a6bff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="0,70 40,55 80,60 120,30 160,40 200,15 260,20 260,80 0,80" fill="url(#grad)" opacity="0.15"/>
+              <defs>
+                <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1a6bff"/>
+                  <stop offset="100%" stop-color="#fff"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="stat-row">
+            <div class="stat">
+              <i class="fa-solid fa-user stat-icon"></i>
+              <div>
+                <div class="stat-label">Total Users</div>
+                <div class="stat-value">12,540</div>
+                <div class="stat-change positive">+12.5%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-card mini-card projects-card">
+          <div class="mini-icon"><i class="fa-solid fa-folder-open"></i></div>
+          <div class="mini-label">Projects</div>
+          <div class="mini-value">24</div>
+          <div class="stat-change positive">+8.2%</div>
+        </div>
+        <div class="dashboard-card mini-card success-card">
+          <div class="donut-wrap">
+            <svg viewBox="0 0 60 60" width="60" height="60">
+              <circle cx="30" cy="30" r="22" fill="none" stroke="#e8eeff" stroke-width="7"/>
+              <circle cx="30" cy="30" r="22" fill="none" stroke="#1a6bff" stroke-width="7"
+                stroke-dasharray="103.67 34.56" stroke-dashoffset="27.5" stroke-linecap="round"/>
+            </svg>
+            <span class="donut-label">78%</span>
+          </div>
+          <div class="mini-label">Success Rate</div>
+        </div>
+        <div class="floating-dots dots-top"></div>
+        <div class="floating-dots dots-right"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SERVICES ═══════════ -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-label">OUR SERVICES</div>
+      <h2 class="section-title">Solutions that drive your business forward</h2>
+      <div class="cards-grid">
+        <div class="service-card" data-animate>
+          <div class="service-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Software Development</h3>
+          <p>Custom software solutions built for scalability, performance, and long-term growth.</p>
+          <a href="#contact" class="learn-more">Learn More <i class="fa-solid fa-arrow-right arrow"></i></a>
+        </div>
+        <div class="service-card" data-animate data-delay="100">
+          <div class="service-icon">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <h3>Web Applications</h3>
+          <p>Modern, responsive, and high-performance web applications.</p>
+          <a href="#contact" class="learn-more">Learn More <i class="fa-solid fa-arrow-right arrow"></i></a>
+        </div>
+        <div class="service-card" data-animate data-delay="200">
+          <div class="service-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3>Mobile Apps</h3>
+          <p>Native and cross-platform mobile applications that deliver seamless experiences.</p>
+          <a href="#contact" class="learn-more">Learn More <i class="fa-solid fa-arrow-right arrow"></i></a>
+        </div>
+        <div class="service-card" data-animate data-delay="300">
+          <div class="service-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3>ERP Solutions</h3>
+          <p>End-to-end ERP systems to streamline operations and improve efficiency.</p>
+          <a href="#contact" class="learn-more">Learn More <i class="fa-solid fa-arrow-right arrow"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ HOW WE WORK ═══════════ -->
+  <section class="process section-pad" id="solutions">
+    <div class="container">
+      <div class="section-label">HOW WE WORK</div>
+      <h2 class="section-title">A simple process. Powerful results.</h2>
+      <div class="process-steps">
+        <div class="step" data-animate>
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">01</div>
+            <h3>Understand</h3>
+            <p>We analyze your business needs and define the right solution.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step" data-animate data-delay="150">
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">02</div>
+            <h3>Build</h3>
+            <p>We design, develop and test with focus on quality and scalability.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step" data-animate data-delay="300">
+          <div class="step-icon-wrap">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">03</div>
+            <h3>Scale</h3>
+            <p>We deploy, support and help you grow with continuous improvement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ WHY UNIKWARE ═══════════ -->
+  <section class="why section-pad" id="about">
+    <div class="container">
+      <div class="section-label">WHY UNIKWARE</div>
+      <h2 class="section-title">Technology with purpose. Solutions with impact.</h2>
+      <div class="why-grid">
+        <div class="why-item" data-animate>
+          <div class="why-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <h4>Product-First Thinking</h4>
+            <p>We build solutions that are reliable, scalable and future-ready.</p>
+          </div>
+        </div>
+        <div class="why-item" data-animate data-delay="100">
+          <div class="why-icon">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <div>
+            <h4>Scalable Architecture</h4>
+            <p>Our systems are designed to grow with your business.</p>
+          </div>
+        </div>
+        <div class="why-item" data-animate data-delay="200">
+          <div class="why-icon">
+            <i class="fa-solid fa-file-code"></i>
+          </div>
+          <div>
+            <h4>Clean &amp; Maintainable Code</h4>
+            <p>We follow best practices to deliver quality that lasts.</p>
+          </div>
+        </div>
+        <div class="why-item" data-animate data-delay="300">
+          <div class="why-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <div>
+            <h4>Real-World Experience</h4>
+            <p>We have worked with businesses across various industries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ VISION + COMING SOON ═══════════ -->
+  <section class="vision-section" id="careers">
+    <div class="vision-bg">
+      <div class="container vision-inner">
+        <div class="vision-left" data-animate>
+          <div class="section-label light">OUR VISION</div>
+          <h2>Building products that <span class="highlight-light">scale globally.</span></h2>
+          <p>We are not just a service company. We are building powerful products that solve real-world problems.</p>
+          <a href="#about" class="learn-more light">Learn More About Us <i class="fa-solid fa-arrow-right arrow"></i></a>
+        </div>
+        <div class="vision-right">
+          <div class="section-label light">COMING SOON</div>
+          <div class="coming-cards">
+            <div class="coming-card" data-animate>
+              <div class="coming-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h4>Learning Platform</h4>
+              <p>An advanced eLearning platform for modern educators and learners.</p>
+            </div>
+            <div class="coming-card" data-animate data-delay="100">
+              <div class="coming-icon">
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </div>
+              <h4>ERP Solutions</h4>
+              <p>Smart ERP systems to simplify and automate your operations.</p>
+            </div>
+            <div class="coming-card" data-animate data-delay="200">
+              <div class="coming-icon">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <h4>SaaS Products</h4>
+              <p>A suite of SaaS tools designed to help businesses grow.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="contact-section section-pad" id="contact">
+    <div class="contact-bg-dots"></div>
+    <div class="container contact-inner">
+
+      <!-- Left: info -->
+      <div class="contact-info" data-animate>
+        <div class="section-label">CONTACT US</div>
+        <h2>Let's build something <span class="highlight">impactful together.</span></h2>
+        <p>Have a project in mind? Fill in the form and we'll get back to you shortly.</p>
+        <ul class="contact-meta">
+          <li>
+            <span class="contact-meta-icon"><i class="fa-solid fa-envelope"></i></span>
+            <a href="mailto:hello@unikware.in">hello@unikware.in</a>
+          </li>
+          <li>
+            <span class="contact-meta-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span>Available Worldwide &amp; Remote</span>
+          </li>
+          <li>
+            <span class="contact-meta-icon"><i class="fa-solid fa-clock"></i></span>
+            <span>Mon – Fri &nbsp;·&nbsp; 9 AM – 6 PM</span>
+          </li>
+        </ul>
+        <div class="contact-services-badges">
+          <span class="badge-pill"><i class="fa-solid fa-code"></i> Software Dev</span>
+          <span class="badge-pill"><i class="fa-solid fa-globe"></i> Web Apps</span>
+          <span class="badge-pill"><i class="fa-solid fa-mobile-screen-button"></i> Mobile Apps</span>
+          <span class="badge-pill"><i class="fa-solid fa-database"></i> ERP</span>
+        </div>
+
+        <div class="contact-assurance">
+          <div class="assurance-item">
+            <span class="assurance-icon"><i class="fa-solid fa-bolt"></i></span>
+            <div>
+              <strong>24-hour response</strong>
+              <p>We reply to every enquiry within one business day.</p>
+            </div>
+          </div>
+          <!-- <div class="assurance-item">
+            <span class="assurance-icon"><i class="fa-solid fa-shield-halved"></i></span>
+            <div>
+              <strong>NDA on request</strong>
+              <p>Your idea stays yours — confidentiality guaranteed.</p>
+            </div>
+          </div>
+          <div class="assurance-item">
+            <span class="assurance-icon"><i class="fa-solid fa-comments"></i></span>
+            <div>
+              <strong>Free consultation</strong>
+              <p>No commitment — just an honest chat about your project.</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact-form-wrap" data-animate data-delay="150">
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Full Name <span class="req">*</span></label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-user input-icon"></i>
+                <input type="text" id="cf-name" name="from_name" placeholder="John Smith" required autocomplete="name" />
+              </div>
+              <span class="field-error" id="err-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address <span class="req">*</span></label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="email" id="cf-email" name="from_email" placeholder="john@company.com" required autocomplete="email" />
+              </div>
+              <span class="field-error" id="err-email"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-phone">Phone Number</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-phone input-icon"></i>
+                <input type="tel" id="cf-phone" name="phone" placeholder="+1 234 567 8900" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-company">Company / Organisation</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-building input-icon"></i>
+                <input type="text" id="cf-company" name="company" placeholder="Acme Inc." autocomplete="organization" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-service">Service You're Interested In <span class="req">*</span></label>
+            <div class="input-wrap select-wrap">
+              <i class="fa-solid fa-briefcase input-icon"></i>
+              <select id="cf-service" name="service" required>
+                <option value="" disabled selected>— Select a service —</option>
+                <option value="Software Development">Software Development</option>
+                <option value="Web Applications">Web Applications</option>
+                <option value="Mobile Apps">Mobile Apps</option>
+                <option value="ERP Solutions">ERP Solutions</option>
+                <option value="SaaS / Product">SaaS / Product</option>
+                <option value="Other">Other / Not Sure Yet</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+            <span class="field-error" id="err-service"></span>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Tell Us About Your Project <span class="req">*</span></label>
+            <div class="input-wrap textarea-wrap">
+              <i class="fa-solid fa-pen-to-square input-icon"></i>
+              <textarea id="cf-message" name="message" rows="4" placeholder="Briefly describe what you're looking to build, your timeline, and any key requirements…" required></textarea>
+            </div>
+            <span class="field-error" id="err-message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+            <span class="btn-label">Send Message <i class="fa-solid fa-paper-plane arrow"></i></span>
+            <span class="btn-loading" hidden><i class="fa-solid fa-spinner fa-spin"></i> Sending…</span>
+          </button>
+          <div class="form-success" id="formSuccess" hidden>
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>Message sent!</strong>
+              <p>Thanks for reaching out. We'll be in touch within 1 business day.</p>
+            </div>
+          </div>
+          <div class="form-error-msg" id="formErrorMsg" hidden>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>Something went wrong. Please email us directly at <a href="mailto:hello@unikware.in">hello@unikware.in</a>.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo"><img src="logo.png" alt="UnikWare" class="logo-img footer-logo-img" /></a>
+      <p class="footer-copy">&copy; 2026 UnikWare. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
