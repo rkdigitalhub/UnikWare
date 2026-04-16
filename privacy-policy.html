@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – UnikWare</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    .legal-hero {
+      background: var(--bg-soft);
+      border-bottom: 1px solid var(--border);
+      padding: 120px 0 56px;
+    }
+    .legal-hero .section-label { margin-bottom: 12px; }
+    .legal-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .legal-hero p {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .legal-body {
+      padding: 64px 0 96px;
+      background: var(--bg);
+    }
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+    /* Sticky TOC */
+    .legal-toc {
+      position: sticky;
+      top: 96px;
+    }
+    .legal-toc h4 {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .legal-toc ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .legal-toc ul li a {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 5px 10px;
+      border-left: 2px solid var(--border);
+      display: block;
+      transition: color .2s, border-color .2s;
+    }
+    .legal-toc ul li a:hover {
+      color: var(--blue);
+      border-color: var(--blue);
+    }
+    /* Content */
+    .legal-content { max-width: 760px; }
+    .legal-content section { margin-bottom: 48px; }
+    .legal-content h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .legal-content h2 i {
+      color: var(--blue);
+      font-size: 1rem;
+    }
+    .legal-content p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+    .legal-content ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    .legal-content ul li {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 6px;
+    }
+    .legal-content a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .legal-content a:hover { text-decoration: underline; }
+    .legal-highlight {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .legal-layout { grid-template-columns: 1fr; }
+      .legal-toc { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="UnikWare" class="logo-img" /></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#solutions">Solutions</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#careers">Careers</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a href="index.html#contact" class="btn btn-primary nav-cta">Get in Touch <i class="fa-solid fa-arrow-right arrow"></i></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <div class="legal-hero">
+    <div class="container">
+      <div class="section-label">LEGAL</div>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: April 16, 2026 &nbsp;·&nbsp; Effective: April 16, 2026</p>
+    </div>
+  </div>
+
+  <!-- ═══════════ BODY ═══════════ -->
+  <div class="legal-body">
+    <div class="container legal-layout">
+
+      <!-- TOC -->
+      <aside class="legal-toc">
+        <h4>On this page</h4>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#information-we-collect">Information We Collect</a></li>
+          <li><a href="#how-we-use">How We Use Your Information</a></li>
+          <li><a href="#sharing">Sharing Your Information</a></li>
+          <li><a href="#cookies">Cookies</a></li>
+          <li><a href="#data-retention">Data Retention</a></li>
+          <li><a href="#your-rights">Your Rights</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#third-party">Third-Party Links</a></li>
+          <li><a href="#children">Children's Privacy</a></li>
+          <li><a href="#changes">Changes to This Policy</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </aside>
+
+      <!-- Content -->
+      <div class="legal-content">
+
+        <div class="legal-highlight">
+          <strong>Your privacy matters to us.</strong> This policy explains what data we collect, why we collect it, and how we protect it. We do not sell your personal data to third parties.
+        </div>
+
+        <section id="overview">
+          <h2><i class="fa-solid fa-circle-info"></i> Overview</h2>
+          <p>UnikWare ("we", "us", or "our") operates the website <a href="https://unikware.in">unikware.in</a> and provides software development, web application, mobile app, and ERP services. This Privacy Policy describes how we collect, use, and safeguard information when you visit our website or engage our services.</p>
+          <p>By using our website, you agree to the collection and use of information in accordance with this policy.</p>
+        </section>
+
+        <section id="information-we-collect">
+          <h2><i class="fa-solid fa-database"></i> Information We Collect</h2>
+          <p>We collect the following categories of information:</p>
+          <ul>
+            <li><strong>Contact information:</strong> Name, email address, phone number, and company name provided via our contact form.</li>
+            <li><strong>Project information:</strong> Details about the service you are interested in and your project requirements.</li>
+            <li><strong>Usage data:</strong> Pages visited, time spent on pages, browser type, device type, and IP address (collected automatically via server logs or analytics tools).</li>
+            <li><strong>Communication records:</strong> Emails, messages, or other correspondence you send us.</li>
+          </ul>
+          <p>We do not collect sensitive personal data such as payment card numbers, government ID numbers, or health information through this website.</p>
+        </section>
+
+        <section id="how-we-use">
+          <h2><i class="fa-solid fa-gear"></i> How We Use Your Information</h2>
+          <p>We use the information we collect for the following purposes:</p>
+          <ul>
+            <li>To respond to your enquiries and provide the services you request.</li>
+            <li>To communicate project updates, proposals, and relevant business information.</li>
+            <li>To improve our website content and user experience.</li>
+            <li>To comply with legal obligations and protect our rights.</li>
+            <li>To send occasional service-related announcements (you may opt out at any time).</li>
+          </ul>
+          <p>We will never use your information for purposes incompatible with those listed above without your explicit consent.</p>
+        </section>
+
+        <section id="sharing">
+          <h2><i class="fa-solid fa-share-nodes"></i> Sharing Your Information</h2>
+          <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in the following limited circumstances:</p>
+          <ul>
+            <li><strong>Service providers:</strong> Trusted third-party tools we use to operate our business (e.g., email delivery, analytics), who are contractually bound to keep your data confidential.</li>
+            <li><strong>Legal requirements:</strong> If required by law, court order, or government authority.</li>
+            <li><strong>Business transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</li>
+          </ul>
+        </section>
+
+        <section id="cookies">
+          <h2><i class="fa-solid fa-cookie-bite"></i> Cookies</h2>
+          <p>Our website may use cookies and similar tracking technologies to enhance your browsing experience. Cookies are small files stored on your device that help us understand how visitors interact with our site.</p>
+          <p>Types of cookies we may use:</p>
+          <ul>
+            <li><strong>Essential cookies:</strong> Required for the website to function correctly.</li>
+            <li><strong>Analytics cookies:</strong> Help us understand website traffic and usage patterns (e.g., Google Analytics).</li>
+          </ul>
+          <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, some features of our website may not function properly without cookies.</p>
+        </section>
+
+        <section id="data-retention">
+          <h2><i class="fa-solid fa-clock-rotate-left"></i> Data Retention</h2>
+          <p>We retain your personal information only for as long as necessary to fulfil the purposes outlined in this policy, or as required by applicable law. Contact form submissions are retained for up to 24 months unless you request earlier deletion.</p>
+        </section>
+
+        <section id="your-rights">
+          <h2><i class="fa-solid fa-user-shield"></i> Your Rights</h2>
+          <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+          <ul>
+            <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+            <li><strong>Correction:</strong> Request that we correct inaccurate or incomplete data.</li>
+            <li><strong>Deletion:</strong> Request that we delete your personal data ("right to be forgotten").</li>
+            <li><strong>Objection:</strong> Object to the processing of your personal data for specific purposes.</li>
+            <li><strong>Portability:</strong> Request a portable copy of your data in a machine-readable format.</li>
+          </ul>
+          <p>To exercise any of these rights, please contact us at <a href="mailto:hello@unikware.in">hello@unikware.in</a>. We will respond within 30 days.</p>
+        </section>
+
+        <section id="security">
+          <h2><i class="fa-solid fa-lock"></i> Security</h2>
+          <p>We take reasonable technical and organisational measures to protect your personal information against unauthorised access, disclosure, alteration, or destruction. These include encrypted transmissions (HTTPS), access controls, and regular security reviews.</p>
+          <p>However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+        </section>
+
+        <section id="third-party">
+          <h2><i class="fa-solid fa-arrow-up-right-from-square"></i> Third-Party Links</h2>
+          <p>Our website may contain links to third-party websites. These sites have their own privacy policies, and we have no responsibility for their content or practices. We encourage you to review the privacy policy of any external site you visit.</p>
+        </section>
+
+        <section id="children">
+          <h2><i class="fa-solid fa-child"></i> Children's Privacy</h2>
+          <p>Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will promptly delete it.</p>
+        </section>
+
+        <section id="changes">
+          <h2><i class="fa-solid fa-pen-to-square"></i> Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of our website after changes constitutes acceptance of the updated policy.</p>
+        </section>
+
+        <section id="contact-us">
+          <h2><i class="fa-solid fa-envelope"></i> Contact Us</h2>
+          <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please reach out to us:</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:hello@unikware.in">hello@unikware.in</a></li>
+            <li><strong>Location:</strong> Coimbatore, Tamil Nadu, India</li>
+            <li><strong>Hours:</strong> Monday – Friday, 9 AM – 6 PM IST</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 UnikWare. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

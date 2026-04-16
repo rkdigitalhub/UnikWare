@@ -41,55 +41,20 @@
           <a href="#contact" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right arrow"></i></a>
           <a href="#solutions" class="btn btn-outline">View Solutions <i class="fa-solid fa-arrow-right arrow"></i></a>
         </div>
+        <div class="hero-social-proof">
+          <div class="proof-avatars">
+            <span class="avatar av1"></span>
+            <span class="avatar av2"></span>
+            <span class="avatar av3"></span>
+          </div>
+          <div class="proof-text">
+            <span class="proof-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <strong>5.0</strong></span>
+            <span class="proof-label">Trusted by businesses across industries</span>
+          </div>
+        </div>
       </div>
       <div class="hero-visual" data-animate data-delay="200">
-        <div class="dashboard-card main-card">
-          <div class="card-header">
-            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-            <span class="card-title">Analytics Overview</span>
-          </div>
-          <div class="chart-area">
-            <svg viewBox="0 0 260 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <polyline points="0,70 40,55 80,60 120,30 160,40 200,15 260,20" stroke="#1a6bff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-              <polyline points="0,70 40,55 80,60 120,30 160,40 200,15 260,20 260,80 0,80" fill="url(#grad)" opacity="0.15"/>
-              <defs>
-                <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#1a6bff"/>
-                  <stop offset="100%" stop-color="#fff"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="stat-row">
-            <div class="stat">
-              <i class="fa-solid fa-user stat-icon"></i>
-              <div>
-                <div class="stat-label">Total Users</div>
-                <div class="stat-value">12,540</div>
-                <div class="stat-change positive">+12.5%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="dashboard-card mini-card projects-card">
-          <div class="mini-icon"><i class="fa-solid fa-folder-open"></i></div>
-          <div class="mini-label">Projects</div>
-          <div class="mini-value">24</div>
-          <div class="stat-change positive">+8.2%</div>
-        </div>
-        <div class="dashboard-card mini-card success-card">
-          <div class="donut-wrap">
-            <svg viewBox="0 0 60 60" width="60" height="60">
-              <circle cx="30" cy="30" r="22" fill="none" stroke="#e8eeff" stroke-width="7"/>
-              <circle cx="30" cy="30" r="22" fill="none" stroke="#1a6bff" stroke-width="7"
-                stroke-dasharray="103.67 34.56" stroke-dashoffset="27.5" stroke-linecap="round"/>
-            </svg>
-            <span class="donut-label">78%</span>
-          </div>
-          <div class="mini-label">Success Rate</div>
-        </div>
-        <div class="floating-dots dots-top"></div>
-        <div class="floating-dots dots-right"></div>
+        <img src="header.png" alt="UnikWare Platform" class="hero-img" />
       </div>
     </div>
   </section>
@@ -224,6 +189,31 @@
     </div>
   </section>
 
+  <!-- ═══════════ STATS BAND ═══════════ -->
+  <section class="stats-band">
+    <div class="container stats-inner">
+      <div class="stat-item" data-animate>
+        <div class="stat-num" data-count="50" data-suffix="+">50+</div>
+        <div class="stat-desc">Projects Delivered</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-animate data-delay="100">
+        <div class="stat-num" data-count="30" data-suffix="+">30+</div>
+        <div class="stat-desc">Happy Clients</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-animate data-delay="200">
+        <div class="stat-num" data-count="98" data-suffix="%">98%</div>
+        <div class="stat-desc">On-time Delivery</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-animate data-delay="300">
+        <div class="stat-num" data-count="5" data-suffix="+">5+</div>
+        <div class="stat-desc">Years of Experience</div>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══════════ VISION + COMING SOON ═══════════ -->
   <section class="vision-section" id="careers">
     <div class="vision-bg">
@@ -235,7 +225,7 @@
           <a href="#about" class="learn-more light">Learn More About Us <i class="fa-solid fa-arrow-right arrow"></i></a>
         </div>
         <div class="vision-right">
-          <div class="section-label light">COMING SOON</div>
+          <div class="section-label light">PRODUCTS IN PROGRESS</div>
           <div class="coming-cards">
             <div class="coming-card" data-animate>
               <div class="coming-icon">
@@ -243,6 +233,7 @@
               </div>
               <h4>Learning Platform</h4>
               <p>An advanced eLearning platform for modern educators and learners.</p>
+              <span class="coming-tag">Coming Soon</span>
             </div>
             <div class="coming-card" data-animate data-delay="100">
               <div class="coming-icon">
@@ -250,6 +241,7 @@
               </div>
               <h4>ERP Solutions</h4>
               <p>Smart ERP systems to simplify and automate your operations.</p>
+              <span class="coming-tag">Coming Soon</span>
             </div>
             <div class="coming-card" data-animate data-delay="200">
               <div class="coming-icon">
@@ -257,10 +249,68 @@
               </div>
               <h4>SaaS Products</h4>
               <p>A suite of SaaS tools designed to help businesses grow.</p>
+              <span class="coming-tag">Coming Soon</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TESTIMONIALS ═══════════ -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="container">
+      <div class="section-label">WHAT OUR CLIENTS SAY</div>
+      <h2 class="section-title">Real results. Real feedback.</h2>
+      <div class="testi-grid">
+        <div class="testi-card" data-animate>
+          <div class="testi-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p>UnikWare delivered a robust ERP solution that transformed how we operate. Their team is professional, dedicated and delivers on time.</p>
+          <div class="testi-author">
+            <span class="testi-avatar ta1"></span>
+            <div>
+              <strong>Rajesh Kumar</strong>
+              <span>Operations Head, TechNova</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" data-animate data-delay="100">
+          <div class="testi-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p>Excellent work on our web application. They understood our needs perfectly and built a solution that exceeded our expectations.</p>
+          <div class="testi-author">
+            <span class="testi-avatar ta2"></span>
+            <div>
+              <strong>Priya Nair</strong>
+              <span>CTO, BrightLine</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" data-animate data-delay="200">
+          <div class="testi-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p>The mobile app developed by UnikWare is fast, secure and loved by our users. Great communication and support throughout the project.</p>
+          <div class="testi-author">
+            <span class="testi-avatar ta3"></span>
+            <div>
+              <strong>Aravinth S</strong>
+              <span>Founder, Flexa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA BANNER ═══════════ -->
+  <section class="cta-banner">
+    <div class="container cta-banner-inner">
+      <div class="cta-banner-text" data-animate>
+        <i class="fa-solid fa-rocket cta-banner-icon"></i>
+        <div>
+          <h2>Let's build something impactful together.</h2>
+          <p>Have a project in mind? Let's discuss how we can help you achieve your goals.</p>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-white" data-animate data-delay="100">Contact Us <i class="fa-solid fa-arrow-right arrow"></i></a>
     </div>
   </section>
 
@@ -405,14 +455,63 @@
 
   <!-- ═══════════ FOOTER ═══════════ -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <a href="#" class="logo"><img src="logo.png" alt="UnikWare" class="logo-img footer-logo-img" /></a>
-      <p class="footer-copy">&copy; 2026 UnikWare. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+    <div class="container footer-top">
+      <div class="footer-col footer-brand">
+        <a href="#" class="logo"><img src="logo.png" alt="UnikWare" class="logo-img footer-logo-img" /></a>
+        <p>We build scalable software solutions that help businesses grow, innovate and succeed.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:hello@unikware.in" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Software Development</a></li>
+          <li><a href="#services">Web Applications</a></li>
+          <li><a href="#services">Mobile Apps</a></li>
+          <li><a href="#services">ERP Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul class="footer-contact-list">
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:hello@unikware.in">hello@unikware.in</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="tel:+919043669210">+91 9043669210</a></li>
+          <li><i class="fa-solid fa-location-dot"></i><span>Chennai, Tamil Nadu, India</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 UnikWare. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms</a>
+        </div>
       </div>
     </div>
   </footer>

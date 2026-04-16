@@ -76,21 +76,23 @@ const WEB3FORMS_ACCESS_KEY = 'c0afca3b-5468-4910-8edc-0d188e828c32';  // e.g. 'x
   );
   animatedEls.forEach(el => observer.observe(el));
 
-  /* ── Animated counter (hero stats) ── */
-  function animateCounter(el, end, duration = 1600) {
+  /* ── Animated counters (stats band) ── */
+  function animateCounter(el, end, suffix = '', duration = 1600) {
     let start = 0;
     const step = end / (duration / 16);
     const tick = () => {
       start += step;
       if (start < end) {
-        el.textContent = Math.floor(start).toLocaleString();
+        el.textContent = Math.floor(start).toLocaleString() + suffix;
         requestAnimationFrame(tick);
       } else {
-        el.textContent = end.toLocaleString();
+        el.textContent = end.toLocaleString() + suffix;
       }
     };
     requestAnimationFrame(tick);
   }
+
+  /* Hero stat value (12,540) */
   const statValue = document.querySelector('.stat-value');
   if (statValue) {
     const counterObserver = new IntersectionObserver(entries => {
@@ -101,6 +103,19 @@ const WEB3FORMS_ACCESS_KEY = 'c0afca3b-5468-4910-8edc-0d188e828c32';  // e.g. 'x
     }, { threshold: 0.5 });
     counterObserver.observe(statValue);
   }
+
+  /* Stats band counters */
+  document.querySelectorAll('.stat-num[data-count]').forEach(el => {
+    const end = parseInt(el.dataset.count, 10);
+    const suffix = el.dataset.suffix || '';
+    const obs = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        animateCounter(el, end, suffix);
+        obs.disconnect();
+      }
+    }, { threshold: 0.5 });
+    obs.observe(el);
+  });
 
   /* ── Smooth scroll for anchor links ── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
