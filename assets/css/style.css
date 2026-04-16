@@ -88,6 +88,10 @@
 
 /* ══ Dark: hero ══ */
 [data-theme="dark"] .hero { background: var(--bg); }
+[data-theme="dark"] .hero-img {
+  -webkit-mask-image: radial-gradient(ellipse 88% 85% at 62% 50%, black 45%, transparent 100%);
+  mask-image: radial-gradient(ellipse 88% 85% at 62% 50%, black 45%, transparent 100%);
+}
 [data-theme="dark"] .badge {
   background: rgba(77,148,255,.12);
   color: var(--blue);
@@ -196,10 +200,6 @@
   color: var(--blue);
   transform: rotate(20deg);
 }
-.theme-toggle .icon-sun  { display: none; }
-.theme-toggle .icon-moon { display: block; }
-[data-theme="dark"] .theme-toggle .icon-sun  { display: block; }
-[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 [data-theme="dark"] .theme-toggle {
   background: #1e2530;
   border-color: #2d3748;
