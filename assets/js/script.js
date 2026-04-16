@@ -16,6 +16,67 @@ const WEB3FORMS_ACCESS_KEY = 'c0afca3b-5468-4910-8edc-0d188e828c32';  // e.g. 'x
 (function () {
   'use strict';
 
+  /* ── Dark / Light mode toggle ── */
+  (function () {
+    var root    = document.documentElement;
+    var toggle  = document.getElementById('themeToggle');
+    var STORAGE = 'uw-theme';
+
+    // Apply saved or system preference immediately (before paint)
+    var saved = localStorage.getItem(STORAGE);
+    if (saved) {
+      root.setAttribute('data-theme', saved);
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      root.setAttribute('data-theme', 'dark');
+    }
+
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var current = root.getAttribute('data-theme');
+        var next    = current === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem(STORAGE, next);
+      });
+    }
+  }());
+
+  /* ── Splash screen (fires on every page load) ── */
+  const splash = document.getElementById('splashScreen');
+  if (splash) {
+    document.body.style.overflow = 'hidden';
+    setTimeout(function () {
+      splash.classList.add('hide');
+      document.body.style.overflow = '';
+    }, 3000);
+  }
+
+  /* ── Services circle diagram – segment hover ── */
+  var svcCenter = document.getElementById('svcCenter');
+  document.querySelectorAll('.svc-seg').forEach(function (seg) {
+    seg.addEventListener('mouseenter', function () {
+      var idx   = seg.getAttribute('data-seg');
+      var title = seg.getAttribute('data-title');
+      var icon  = seg.getAttribute('data-icon');
+      var color = seg.getAttribute('data-color');
+      // Populate center popup
+      if (svcCenter) {
+        svcCenter.querySelector('.svc-center-icon').className = 'svc-center-icon fa-solid ' + icon;
+        svcCenter.querySelector('.svc-center-title').textContent = title;
+        svcCenter.style.setProperty('--hl-color', color);
+        svcCenter.classList.add('active');
+      }
+      // Highlight matching labels
+      document.querySelectorAll('.svc-label[data-seg="' + idx + '"]').forEach(function (l) {
+        l.style.setProperty('--hl-color', color);
+        l.classList.add('highlight');
+      });
+    });
+    seg.addEventListener('mouseleave', function () {
+      if (svcCenter) svcCenter.classList.remove('active');
+      document.querySelectorAll('.svc-label').forEach(function (l) { l.classList.remove('highlight'); });
+    });
+  });
+
   /* ── Navbar scroll effect ── */
   const navbar = document.getElementById('navbar');
   const onScroll = () => {
